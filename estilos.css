@@ -132,7 +132,6 @@ main {
 
 
 
-/* ===== Variables globales ===== */
 :root {
   --color-primary: #005f99;
   --color-primary-light: #007acc;
@@ -148,7 +147,6 @@ main {
   --font-secondary: 'Poppins', sans-serif;
 }
 
-/* ===== Contenedor principal ===== */
 .content-block,
 .content-block3,
 .content-block4,
@@ -165,7 +163,6 @@ main {
   color: var(--color-text-main);
 }
 
-/* ===== Títulos de sección ===== */
 .content-block h2,
 .content-block3 .title3,
 .content-block4 .title4,
@@ -183,7 +180,6 @@ main {
   text-transform: uppercase;
 }
 
-/* ===== Subtítulos ===== */
 .content-block6 .subtitle6,
 .seccion.especial .texto h3 {
   font-size: 1.25rem;
@@ -195,7 +191,6 @@ main {
   font-style: normal;
 }
 
-/* ===== Filas de contenido ===== */
 .content-row,
 .content-row3,
 .content-row4,
@@ -217,7 +212,6 @@ main {
   direction: rtl;
 }
 
-/* ===== Texto principal ===== */
 .content-row .text,
 .content-row3 .text3,
 .content-row4 .text4,
@@ -233,41 +227,72 @@ main {
   text-align: left;
 }
 
-/* ===== Media (imágenes/videos) ===== */
 .content-row .media,
 .content-row3 .media3,
 .content-row4 .media4,
 .media5,
 .content-row6 .media6,
 .seccion.especial .media {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.4rem;
 }
 
-img,
-iframe {
+img{
   width: 100%;
-  height: 280px;
+  height: 550px;
+  max-width: 550px;
   border-radius: 8px;
   box-shadow: 0 6px 20px var(--shadow-light);
   border: none;
-  object-fit: cover;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
 }
 
 img:hover,
-iframe:hover {
+.horizontal:hover, .vertical:hover {
   transform: scale(1.03);
   box-shadow: 0 14px 38px var(--color-primary-light);
   cursor: pointer;
 }
 
-/* ===== Captions para fotos y videos ===== */
+.horizontal{
+  width: 100%;
+  height: 380px;
+  max-width: 550px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.horizontal1{
+  width: 100%;
+  height: 550px;
+  max-width: 740px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+
+.vertical{
+  width: 100%;
+  height: 550px;
+  max-width: 410px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+
+
 .caption,
 .caption3,
 .caption4,
@@ -284,7 +309,6 @@ iframe:hover {
   user-select: none;
 }
 
-/* ===== Citas (blockquote) ===== */
 .content-row blockquote,
 .content-row3 blockquote.blockquote3,
 .content-row4 blockquote.blockquote4,
@@ -306,7 +330,6 @@ iframe:hover {
   font-family: var(--font-secondary);
 }
 
-/* ===== Cita destacada ===== */
 .highlighted-quote {
   font-size: 1.05rem;
   font-style: italic;
@@ -321,7 +344,6 @@ iframe:hover {
   font-family: var(--font-primary);
 }
 
-/* ===== Texto final ===== */
 .texto-final {
   text-align: center;
   font-size: 1.1rem;
@@ -334,7 +356,6 @@ iframe:hover {
   font-family: var(--font-primary);
 }
 
-/* ===== Audio fullwidth ===== */
 .fullwidth-audio6 iframe {
   width: 100%;
   height: 60px;
@@ -348,7 +369,6 @@ iframe:hover {
   box-shadow: 0 10px 28px var(--color-primary-light);
 }
 
-/* ===== Listas estilizadas ===== */
 ul {
   max-width: 800px;
   margin: 3rem auto;
@@ -360,7 +380,6 @@ ul {
   letter-spacing: 0.01em;
 }
 
-/* ===== Responsividad refinada ===== */
 @media (max-width: 1024px) {
   .content-row,
   .content-row3,
@@ -436,8 +455,6 @@ ul {
 
 
 
-/* ===== Formulario de contacto ===== */
-/* ===== Formulario de contacto compacto y moderno ===== */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -491,7 +508,6 @@ ul {
   box-shadow: 0 5px 14px rgba(0, 95, 163, 0.5);
 }
 
-/* ===== Sección contacto con el autor compacta ===== */
 .contact-author {
   text-align: center;
   color: #555;
@@ -532,7 +548,6 @@ ul {
   font-size: 0.8rem;
 }
 
-/* ===== Footer compacto ===== */
 .site-footer {
   text-align: center;
   padding: 1rem 1rem;
@@ -543,3 +558,41 @@ ul {
   font-family: 'Inter', sans-serif;
   user-select: none;
 }
+
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+}
+
+.nav-button {
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2e7dff;
+  padding: 0.75rem 2rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.15);
+}
+
+.nav-button:hover {
+  background-color: #1a5fd6;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 102, 204, 0.25);
+}
+
+@media (max-width: 600px) {
+  .page-navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
