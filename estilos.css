@@ -279,6 +279,17 @@ img:hover,
   cursor: default;
 }
 
+.horizontal6{
+  width: 100%;
+  height: 400px;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
 
 .vertical{
   width: 100%;
@@ -291,7 +302,27 @@ img:hover,
   cursor: default;
 }
 
+.vertical4{
+  width: 100%;
+  height: 610px;
+  max-width: 410px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
 
+.vertical6{
+  width: 100%;
+  height: 600px;
+  max-width: 410px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
 
 .caption,
 .caption3,
@@ -595,4 +626,26 @@ ul {
     gap: 1rem;
   }
 }
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-links a svg {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: grayscale(100%);
+}
+
+.social-links a:hover svg {
+  transform: scale(1.15);
+  filter: grayscale(0%);
+}
+
 
